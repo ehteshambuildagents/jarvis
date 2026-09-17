@@ -7,7 +7,10 @@ if exist "%~dp0jarvis-secrets.cmd" call "%~dp0jarvis-secrets.cmd"
 
 rem The ElevenLabs voice JARVIS speaks with. Needs a key in jarvis-secrets.cmd;
 rem without one he falls back to the browser voice and this is ignored.
-set "JARVIS_VOICE_ID=IRHApOXLvnW57QJPQH2P"
+rem A default, not an assignment: jarvis-secrets.cmd is read just above, so a
+rem voice ID set there is the one that wins. Setting it unconditionally here
+rem overwrote the users choice every time, silently.
+if not defined JARVIS_VOICE_ID set "JARVIS_VOICE_ID=IRHApOXLvnW57QJPQH2P"
 
 rem JARVIS needs a real Chrome or Edge window for the microphone.
 set "BROWSER="
