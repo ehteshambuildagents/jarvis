@@ -1,10 +1,5 @@
 # J.A.R.V.I.S.
 
-> **Built on [adewaskar/jarvis](https://github.com/adewaskar/jarvis)** by Aditya
-> Dewaskar (MIT). The original project — the interface, voice pipeline, bridge
-> and gesture control — is his work, and its commit history is preserved here.
-> This fork adds Windows support and security hardening; see
-> [What this fork adds](#what-this-fork-adds).
 
 A browser voice assistant with an Iron Man holographic interface. Say
 **"Hey Jarvis"**, he wakes, listens, and does real things through your tools —
