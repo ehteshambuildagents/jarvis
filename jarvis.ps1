@@ -26,7 +26,9 @@ if (Test-Path $secrets) {
     }
   }
 }
-$env:JARVIS_VOICE_ID = 'IRHApOXLvnW57QJPQH2P'
+# A default, not an assignment. The secrets file above may already have set
+# this, and that choice should survive.
+if (-not $env:JARVIS_VOICE_ID) { $env:JARVIS_VOICE_ID = 'IRHApOXLvnW57QJPQH2P' }
 
 # ---------------------------------------------------------------------------
 # The brain and the interface
